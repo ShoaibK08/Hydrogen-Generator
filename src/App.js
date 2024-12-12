@@ -1,14 +1,14 @@
-import React from 'react';
-
+import { Routes, Route } from 'react-router-dom'; // No need to import BrowserRouter here
+import HomePage from './component/pages/homepage/HomePage';
+import IndexPage from './component/pages/indexpage/IndexPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>My Desktop App</h1>
-        <p>Built with React + Electron</p>
-      </header>
-    </div>
+    // Removed <Router> from here as it should be in index.js
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/index-page" element={<IndexPage />} />
+    </Routes>
   );
 }
 

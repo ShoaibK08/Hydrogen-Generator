@@ -1,0 +1,67 @@
+#app {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+#app img {
+  max-height: 80%;
+  height: 100%;
+  width: 50%;
+}
+
+#sim-title {
+  font-size: 24px;
+  text-align: center;
+  color: #000f0c;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  position: relative;
+  top: -20px;
+}
+
+.absolute-button {
+  padding: 12px 24px;
+
+  color: #00988e;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  height: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  top: -20px;
+}
+
+.absolute-button:hover {
+  background-color: #00988e;
+  ;
+  color: white;
+
+}
+
+@media (max-width: 768px) {
+  #sim-title {
+    font-size: 18px;
+    /* Adjusted font size */
+  }
+
+  .absolute-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  #sim-title {
+    font-size: 16px;
+    /* Reduced font size */
+  }
+
+  .absolute-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}

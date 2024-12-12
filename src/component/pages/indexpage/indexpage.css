@@ -1,0 +1,12 @@
+.index-page-container {
+    display: flex;             /* Use Flexbox */
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    height: 65vh;             /* Full viewport height */
+    width: 90%;               /* Full width */
+    background-color: #e8f1f3; /* Optional: Add a background color */
+    margin-top: 50px;
+    margin-left: 70PX;
+    
+  }
+ 

@@ -1,12 +1,96 @@
-.index-page-container {
-    display: flex;             /* Use Flexbox */
-    justify-content: center;   /* Center horizontally */
-    align-items: center;       /* Center vertically */
-    height: 65vh;             /* Full viewport height */
-    width: 90%;               /* Full width */
-    background-color: #e8f1f3; /* Optional: Add a background color */
-    margin-top: 50px;
-    margin-left: 70PX;
-    
-  }
- 
+.grid-container {
+  background-color: #cfcfcf; /* Light background color */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add subtle shadow around container */
+}
+
+.subtitle-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: -10px; /* Move the subtitle up */
+  font-size: 1.5rem; /* Increase font size for visibility */
+  color:black; /* Darker color for better readability */
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Adjust min width */
+  grid-gap: 30px;
+  justify-content: center;
+  align-items: center;
+
+}
+.grid-button {
+  display: block;
+  background-color: #008080; /* Teal color */
+  color: rgb(27, 25, 25); /* Default text color */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgba(139, 230, 64, 0.5); 
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s ease-in-out;
+  font-size: 1rem;
+}
+
+.grid-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  background-color: #006e62; /* Darker teal on hover */
+  color: #ffffff; /* Text color white on hover */
+}
+
+.grid-button.active {
+  background-color: #006e62; /* Darker teal when active */
+  color: #ffffff; /* White text when item is active (clicked) */
+}
+
+.grid-button.active:hover {
+  background-color: #004f45; /* Even darker teal on hover when active */
+  color: #ffffff; /* Maintain white text color on hover */
+}
+
+.sub-menu {
+  padding-left: 20px;
+  background-color: #006e62; /* Sub-menu background color */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0s 0.3s; /* Fade-in effect for sub-menu */
+}
+
+.sub-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sub-menu ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-menu a {
+  color: #070707d6; /* Default link color */
+  text-decoration: none;
+}
+
+.sub-menu a:hover {
+  text-decoration: underline;
+  color: aliceblue; /* Link color on hover */
+}
+
+.sub-menu li {
+  padding: 5px 0;
+  font-size: 0.95rem; /* Slightly smaller font size for sub-items */
+}

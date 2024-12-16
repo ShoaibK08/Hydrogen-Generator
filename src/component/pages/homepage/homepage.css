@@ -22,25 +22,27 @@
   position: relative;
   top: -20px;
 }
-
 .absolute-button {
-  padding: 12px 24px;
-
-  color: #00988e;
-  font-size: 20px;
-  transition: all 0.3s ease;
-  position: relative;
-  height: 40px;
-  font-family: 'Times New Roman', Times, serif;
+  padding: 10px 20px; /* Adjust padding */
+  font-size: 16px; /* Update font size */
+  font-family: 'Times New Roman', Times, serif; /* Same font as before */
+  border-radius: 25px; /* Rounded corners for modern look */
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
   top: -20px;
+  position: relative;
+  width: 200px;
 }
 
 .absolute-button:hover {
-  background-color: #00988e;
-  ;
-  color: white;
-
+  background-color: #00988e; /* Custom hover background */
+  color: white; /* White text on hover */
+  transform: translateY(-10px); /* Slight upward motion */
 }
+
+.absolute-button:focus {
+  box-shadow: 0 0 5px #00988e; /* Highlight border when focused */
+}
+
 
 @media (max-width: 768px) {
   #sim-title {

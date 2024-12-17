@@ -1,5 +1,5 @@
 .grid-container {
-  background-color: #cfcfcf; /* Light background color */
+  background-color: #cfcfcf;
   padding: 20px;
   border-radius: 10px;
   width: 100%;
@@ -7,7 +7,7 @@
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add subtle shadow around container */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .subtitle-container {
@@ -16,29 +16,29 @@
 }
 
 .subtitle {
-  margin-top: -10px; /* Move the subtitle up */
-  font-size: 1.5rem; /* Increase font size for visibility */
-  color:black; /* Darker color for better readability */
+  margin-top: -10px;
+  font-size: 1.5rem;
+  color: black;
 }
 
 .grid-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Adjust min width */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   grid-gap: 30px;
   justify-content: center;
   align-items: center;
-
 }
+
 .grid-button {
   display: block;
-  background-color: #008080; /* Teal color */
-  color: rgb(27, 25, 25); /* Default text color */
+  background-color: #008080;
+  color: rgb(27, 25, 25);
   text-decoration: none;
   font-weight: bold;
   padding: 15px 20px;
   border-radius: 5px;
   text-align: center;
-  box-shadow: 0px 5px 10px rgba(139, 230, 64, 0.5); 
+  box-shadow: 0px 5px 10px rgba(139, 230, 64, 0.5);
   transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s ease-in-out;
   font-size: 1rem;
 }
@@ -46,26 +46,26 @@
 .grid-button:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  background-color: #006e62; /* Darker teal on hover */
-  color: #ffffff; /* Text color white on hover */
+  background-color: #006e62;
+  color: #ffffff;
 }
 
 .grid-button.active {
-  background-color: #006e62; /* Darker teal when active */
-  color: #ffffff; /* White text when item is active (clicked) */
+  background-color: #006e62;
+  color: #ffffff;
 }
 
 .grid-button.active:hover {
-  background-color: #004f45; /* Even darker teal on hover when active */
-  color: #ffffff; /* Maintain white text color on hover */
+  background-color: #004f45;
+  color: #ffffff;
 }
 
 .sub-menu {
   padding-left: 20px;
-  background-color: #006e62; /* Sub-menu background color */
+  background-color: #006e62;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0s 0.3s; /* Fade-in effect for sub-menu */
+  transition: opacity 0.3s ease-in-out, visibility 0s 0.3s;
 }
 
 .sub-menu.active {
@@ -81,16 +81,16 @@
 }
 
 .sub-menu a {
-  color: #070707d6; /* Default link color */
+  color: #070707d6;
   text-decoration: none;
 }
 
 .sub-menu a:hover {
   text-decoration: underline;
-  color: aliceblue; /* Link color on hover */
+  color: aliceblue;
 }
 
 .sub-menu li {
   padding: 5px 0;
-  font-size: 0.95rem; /* Slightly smaller font size for sub-items */
+  font-size: 0.95rem;
 }

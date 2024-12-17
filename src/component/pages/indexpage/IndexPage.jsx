@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import Header from '../../header/Header';
 import './indexpage.css';
 
+
 function IndexPage() {
+  
   const topics = [
     {
       name: 'Hydrogen Basics', path: '/hydrogen-basics', subItems: [
@@ -120,6 +122,7 @@ function IndexPage() {
   return (
     <div>
       <Header />
+      
       <div className="d-flex justify-content-center">
         <div className="grid-container">
           <div className="subtitle-container">

@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../../assets/shared/logo.png';
-import HomeIcon from '@mui/icons-material/Home';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from "react-router-dom";
 import './header.css';
 
@@ -12,14 +13,23 @@ function Header() {
     };
 
     return (
-        <div class="headerDiv">
-            <img src={logo} />
-            <h1 >HYDROGEN GENERATOR LEARNING</h1>
-            <HomeIcon className="homeIcon" style={{ fontSize: 40 }}
-                onClick={handleClick}
-            />
-
+        <div>
+            <div className="headerDiv">
+                <img src={logo} alt="Logo" />
+                <h1>HYDROGEN GENERATOR LEARNING</h1>
+               
+            </div>
+            <div class="iconDiv">
+            <FontAwesomeIcon
+                    icon={faHome}
+                    className="homeIcon"
+                    onClick={handleClick}
+                />
+            </div>
+           
         </div>
-    )
+
+    );
 }
+
 export default Header;

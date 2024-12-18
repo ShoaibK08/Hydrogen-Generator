@@ -1,6 +1,6 @@
 import React from "react";
 import pixelcutImage from './pixelcut-export.png';
-import './homepage.css';
+import './HomePage.css';
 import SendIcon from '@mui/icons-material/Send';
 import "react-awesome-button/dist/styles.css";
 import { useNavigate } from 'react-router-dom';

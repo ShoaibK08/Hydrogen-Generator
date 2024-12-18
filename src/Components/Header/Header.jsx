@@ -3,7 +3,7 @@ import logo from '../../assets/shared/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from "react-router-dom";
-import './header.css';
+import './Header.css';
 
 function Header() {
 

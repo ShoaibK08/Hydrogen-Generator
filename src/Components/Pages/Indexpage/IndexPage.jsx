@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Header from '../../header/Header';
-import './indexpage.css';
+import Header from '../../Header/Header';
+import './Indexpage.css';
 
 
 function IndexPage() {
